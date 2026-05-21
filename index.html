@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоковый Фотокаталог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Стоковые Фотографии</h1>
+        <p>Кликните на изображение, чтобы открыть его на весь экран</p>
+    </header>
+
+    <!-- Сетка каталога -->
+    <main class="gallery-container">
+        
+        <!-- Карточка 1 -->
+        <div class="photo-card" data-full="фото/фото9.jpg">
+            <div class="photo-wrapper">
+                <img src="фото/фото9.jpg" alt="Ave Maria!" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Ave Maria!</h3>
+                <p>Автор: Вероника Аксёнова</p>
+            </div>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="photo-card" data-full="фото/фото6.jpg">
+            <div class="photo-wrapper">
+                <img src="фото/фото6.jpg" alt="Котик" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Котик</h3>
+                <p>Автор: Вероника Аксёнова</p>
+            </div>
+        </div>
+
+        <!-- Карточка 3 -->
+        <div class="photo-card" data-full="фото/фото7.jpg">
+            <div class="photo-wrapper">
+                <img src="фото/фото7.jpg" alt="Карты" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Карты</h3>
+                <p>Автор: Вероника Аксёнова</p>
+            </div>
+        </div>
+
+        <!-- Карточка 4 -->
+        <div class="photo-card" data-full="фото/фото4.jpg">
+            <div class="photo-wrapper">
+                <img src="фото/фото4.jpg" alt="Зимняя арка" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Зимняя арка</h3>
+                <p>Автор: Вероника Аксёнова</p>
+            </div>
+        </div>
+
+        <!-- Карточка 5 -->
+        <div class="photo-card" data-full="фото/фото5.jpg">
+            <div class="photo-wrapper">
+                <img src="фото/фото5.jpg" alt="Домик" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Домик</h3>
+                <p>Автор: Вероника Аксёнова</p>
+            </div>
+        </div>
+
+        <!-- Карточка 6 -->
+        <div class="photo-card" data-full="фото/фото8.jpg">
+            <div class="photo-wrapper">
+                <img src="фото/фото8.jpg" alt="Бокал" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Бокал</h3>
+                <p>Автор: Вероника Аксёнова</p>
+            </div>
+        </div>
+        <div class="photo-card" data-full="фото/фото1.jpg">
+            <div class="photo-wrapper">
+                <img src="фото/фото1.jpg" alt="Фотоопарат" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Фотоопарат</h3>
+                <p>Автор: Вероника Аксёнова</p>
+            </div>
+        </div>
+        <div class="photo-card" data-full="фото/фото2.jpg">
+            <div class="photo-wrapper">
+                <img src="фото/фото2.jpg" alt="Ночь" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Ночь</h3>
+                <p>Автор: Вероника Аксёнова</p>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- Полноэкранный overlay для просмотра фото -->
+    <div class="fullscreen-overlay" id="fullscreenOverlay">
+        <!-- Кнопка закрытия окна (&times; это знак крестика) -->
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <!-- Сюда будет подставляться адрес большого изображения через JS -->
+        <img src="" alt="Просмотр фото" class="fullscreen-image" id="fullscreenImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
